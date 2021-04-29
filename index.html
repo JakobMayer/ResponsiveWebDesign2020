@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
@@ -27,8 +28,8 @@
 
         <div class="row">
             <div class="hero-text-box">
-                <h1><strong>WHISKY,</strong></h1>
-                <h1><strong>WIE HAUSGEMACHT.</strong></h1>
+                <h1 data-aos="fade-right"data-aos-delay="1000"><strong>WHISKY,</strong></h1>
+                <h1 data-aos="fade-right" data-aos-delay="1500"><strong>WIE HAUSGEMACHT.</strong></h1>
             </div>
         </div>
 
@@ -54,7 +55,7 @@
                 </div>
             </div>
             <div class="col span-1-of-2">
-                <p class="small-text">Trägt zu einer gesunden Ernährung 
+                <p class="small-text" data-aos="fade-down" data-aos-delay="2500">Trägt zu einer gesunden Ernährung 
                     bei,  hilft gegen Stress und ist gut für 
                     die Umwelt. <br><br>
                     
@@ -68,8 +69,8 @@
     <section class="willGrant">
         <div class="row">
             <div class="col span-2-of-3">
-                <h2><strong>Preisgekrönte Whiskys</strong></h2>  
-                <p class="white">1834 legte Walter Grant den Grundstein für unsere Geschichte, 
+                <h2 data-aos="fade-up"><strong>Preisgekrönte Whiskys</strong></h2>  
+                <p class="white" data-aos="fade-up" data-aos-delay="800">1834 legte Walter Grant den Grundstein für unsere Geschichte, 
                     die bis heute fortgeschrieben wird. <br><br>
                     
                     Bis heute befindet sich die Brennerei in Familienhand und bewahrt 
@@ -85,7 +86,7 @@
 
     <section class="produkt">
         <div class="row">
-            <div class="col span-1-of-3 produkttext_links">
+            <div class="col span-1-of-3 produkttext_links" data-aos="fade-left">
                 <h2><strong>18 Jahre gereift</strong></h2>
                 <p>In der Nase mit Sherry und Honig, 
                     dazu florale und würzige Noten. 
@@ -105,7 +106,7 @@
                 <img src="Bilder/18.1-Jahre.png" class="großesProduktBild">
             </div>
            
-            <div class="col span-1-of-3 produkttext_rechts">
+            <div class="col span-1-of-3 produkttext_rechts" data-aos="fade-right">
                 <li>In <a href="#" class="farbe_1">Oloroso-Sherryfässern</a> gelagert</li>
                 <li>Aus <a href="#" class="farbe_1">Speyside, Schottland</a></li>
                 <li>43% VOL. Alkohol</li>
@@ -116,6 +117,19 @@
             </div>
         </div>
     </section>
-    
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 600,
+            delay: 600,
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
+        </script>
 </body>
 </html>

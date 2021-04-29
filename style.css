@@ -182,3 +182,20 @@ strong {
 .produkttext_rechts {
     margin-top: 20%;
 }
+
+
+
+/* responsiv:
+@media(max-width: 7600px) {
+    .card {
+        display: block;
+    }
+}
+*/
+
+/* aos  */
+[data-aos="my-animation"] {
+    transform: rotate(360deg) scale(0.5);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
