@@ -9,7 +9,7 @@ body {
     color: black;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
     
 }
@@ -54,6 +54,12 @@ h2 {
     margin-bottom: 4%;
 }
 
+.middle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h3 {
     
 }
@@ -64,9 +70,25 @@ h4 {
     margin-top: 10%;
 }
 
+h5 {
+    font-size: 40px;
+    margin-bottom: 0;
+    height: 50px;
+}
+
+blockquote {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 10%;
+}
+
 strong {
     background-color: white;
     border: 5px solid white;
+}
+
+.white {
+    color: white;
 }
 
 /* ----------------------------------------------- */
@@ -131,10 +153,6 @@ strong {
     
 }
 
-.white {
-    color: white;
-}
-
 /* ----------------------------------------------- */
 /* Buttons */
 /* ----------------------------------------------- */
@@ -150,7 +168,6 @@ strong {
     font-size: 25px;
     font-weight: 600;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 .button_1 {
     border: 2px solid #D12918;
@@ -183,19 +200,77 @@ strong {
     margin-top: 20%;
 }
 
+.abtrennung {
+    margin-top: 4%;
+    width:100%;
+    height: auto;
+}
 
 
-/* responsiv:
+
+/* ----------------------------------------------- */
+/* Testemonials */
+/* ----------------------------------------------- */
+
+.testemonials {
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+/* ----------------------------------------------- */
+/* Abschluss */
+/* ----------------------------------------------- */
+
+.abschluss {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.356)), url("Bilder/Fässer.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.letzter-text {
+    width: 70%;
+    margin: 40vh auto 0 auto;
+    color: white;
+    font-size: 140%;
+    text-align: center;
+}
+
+/* ----------------------------------------------- */
+/* Footer */
+/* ----------------------------------------------- */
+
+footer {
+    padding: 3%;
+    background-color: white;
+    text-align:left;
+}
+
+ul a {
+    color: black;
+    text-decoration: none;
+
+}
+
+ul a:hover{
+    color: #D12918;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------- */
+/* Icon */
+/* ----------------------------------------------- */
+
+ion-icon {
+    font-size: 25px;
+    color: #E79A22;
+    text-align: center;
+}
+
+
+
 @media(max-width: 7600px) {
-    .card {
+    .class {
         display: block;
     }
-}
-*/
-
-/* aos  */
-[data-aos="my-animation"] {
-    transform: rotate(360deg) scale(0.5);
-  opacity: 0;
-  transition-property: transform, opacity;
 }
