@@ -222,7 +222,7 @@ strong {
 /* ----------------------------------------------- */
 
 .abschluss {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.356)), url("Bilder/fässer.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.356)), url("Bilder/Kessel.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
