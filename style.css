@@ -41,6 +41,12 @@ body {
     margin: 0 auto;
 }
 
+.row_2 {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+  
+
 
 
 h1 {
@@ -60,9 +66,7 @@ h2 {
     margin-right: auto;
 }
 
-h3 {
-    
-}
+
 
 h4 {
     font-weight: 700;
@@ -94,6 +98,7 @@ strong {
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
+
 
 .logo {
     height: 40px;
@@ -279,9 +284,25 @@ ion-icon {
 }
 
 
+/* ------------------- Tablet -------------------*/
 
-@media(max-width: 7600px) {
-    .class {
-        display: block;
+@media screen and (max-width: 1024px){
+    .row {
+        width: 800px;
+    }
+}
+
+
+/* ------------------- Smartphone -------------------*/
+
+@media screen and (max-width: 600px){
+
+    h1 {
+        font-size: 200%;
+    font-weight: 600;
+    }
+
+    .row {
+        width: 500px;
     }
 }
