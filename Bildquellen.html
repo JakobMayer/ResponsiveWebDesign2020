@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Bildquellen</title>
+</head>
+<body>
+    <div class="row">
+        <div class="quellen">
+            <h1 data-aos="fade-right"data-aos-delay="500"><strong>Bildquellen</strong></h1>
+            <br>
+            <ul data-aos="fade-right"data-aos-delay="1000">Bild 1 (Kessel): <a class="farbe_1" href="https://pixabay.com/de/photos/kupferkessel-brennerei-whisky-3936716/">https://pixabay.com/de/photos/kupferkessel-brennerei-whisky-3936716/</a></ul> 
+            <ul data-aos="fade-right"data-aos-delay="1200">Bild 2 (Fässer): <a class="farbe_1" href="https://unsplash.com/photos/zDlusnb3G3Q">https://unsplash.com/photos/zDlusnb3G3Q</a></ul>
+            <button onclick="window.location.href='index.html'"" data-aos="fade-right"data-aos-delay="1800" class="button_1">Zurück</button>
+        </div>
+    </div>
+    
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 400,
+            duration: 600,
+            delay: 500,
+            disable: function () {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+            }
+        });
+        </script>
+</body>
+</html>
