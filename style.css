@@ -24,8 +24,8 @@ body {
     visibility: hidden;
 }
 
-.farbe_1,
-.farbe_2,
+.farbe_1:hover,
+.farbe_2:hover,
 .farbe_3:hover {
     text-decoration: underline;
 }
