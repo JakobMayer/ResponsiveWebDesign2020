@@ -7,7 +7,8 @@
 body {
     background-image: url("Bilder/background.jpg");
     color: black;
-    font-family: 'Poppins', serif;
+    font-family: serif;
+    letter-spacing: 1px;
     font-weight: 300;
     font-size: 18px;
     text-rendering: optimizeLegibility;
@@ -47,13 +48,16 @@ body {
 }
   
 
-
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', serif;
+}
 
 h1 {
     word-spacing: 20px;
     letter-spacing: 1px;
     font-size: 320%;
     font-weight: 700;
+    
 }
 
 h2 {
@@ -100,6 +104,7 @@ strong {
 /* ----------------------------------------------- */
 
 
+
 .logo {
     height: 40px;
     width: auto;
@@ -132,6 +137,11 @@ strong {
 
 .bottle {
     float: left;
+}
+
+.bottle img:hover {
+    transition: 0.2s;
+    transform:scale(1.06, 1.06);
 }
 
 .small-text {
