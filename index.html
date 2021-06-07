@@ -7,7 +7,8 @@
 
     <link rel="stylesheet" type="text/css" href="grid.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="queries.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <title>Whisky+</title>
@@ -37,7 +38,7 @@
             <div class="col span-1-of-2">
                 <div class="small-bottles">
                     <div class="bottle">
-                        <img src="Bilder/12_Jahre.png">
+                        <img src="Bilder/12-Jahre.png">
                         <h3 class="jahresanzahl"><strong>12 Jahre</strong></h3>
                     </div>
                     <div class="bottle">
@@ -120,6 +121,103 @@
             </div>
         </div>
         <img src="Bilder/abtrennung_rot.png" class="abtrennung">
+    </section>
+
+    <section class="produkt">
+        <div class="row">
+            <div class="col span-1-of-3 produkttext_links" data-aos="fade-left">
+                <h2><strong>18 Jahre gereift</strong></h2>
+                <p>Rauchig-maritim in der Nase. 
+                    Am Gaumen setzen sich diese 
+                    Noten fort und vermählen sich 
+                    mit dominanten Zitrus- und 
+                    Eichennoten. Langer, 
+                    fruchtig-rauchiger Abgang. <br><br>
+                    
+                    Die Fässer stammen von dem 
+                    luftgetrockneten Holz spanischer 
+                    Bäume
+                </p>
+            </div>
+           
+            <div class="col span-1-of-3">
+                <img src="Bilder/18.2-Jahre.png" class="großesProduktBild">
+            </div>
+           
+            <div class="col span-1-of-3 produkttext_rechts" data-aos="fade-right">
+                <li>In <a href="#" class="farbe_2">Eichen-Sherryfässern</a> gelagert</li>
+                <li>Aus <a href="#" class="farbe_2">Speyside, Schottland</a></li>
+                <li>40% VOL. Alkohol</li>
+                <li>Keine Chemie, <a href="#" class="farbe_2">nachhaltige Zutaten</a></li>
+
+                <h4>249 Euro</h4>
+                <button class="button_2">Bestellen</button>
+            </div>
+        </div>
+        <img src="Bilder/abtrennung_gelb.png" class="abtrennung">
+    </section>
+
+    <section class="produkt">
+        <div class="row">
+            <div class="col span-1-of-3 produkttext_links" data-aos="fade-left">
+                <h2><strong>15 Jahre gereift</strong></h2>
+                <p>Fruchtiger Duft mit Anklängen von 
+                    Apfelblüte und Birne, abgerundet 
+                    durch Vanille, Eiche, Zucker 
+                    und Lakritz. Süsser Geschmack 
+                    nach Zuckerwatte, mit 
+                    komplementären Aromen von 
+                    gerösteten Mandeln, Zimt und 
+                    Tannin.
+                </p>
+            </div>
+           
+            <div class="col span-1-of-3">
+                <img src="Bilder/15-Jahre.png" class="großesProduktBild">
+            </div>
+           
+            <div class="col span-1-of-3 produkttext_rechts" data-aos="fade-right">
+                <li>In <a href="#" class="farbe_2">Bourbonfässern</a> gelagert</li>
+                <li>Aus <a href="#" class="farbe_2">Speyside, Schottland</a></li>
+                <li>43% VOL. Alkohol</li>
+                <li>Keine Chemie, <a href="#" class="farbe_2">nachhaltige Zutaten</a></li>
+
+                <h4>199 Euro</h4>
+                <button class="button_2">Bestellen</button>
+            </div>
+        </div>
+        <img src="Bilder/abtrennung_gelb.png" class="abtrennung">
+    </section>
+
+    <section class="produkt">
+        <div class="row">
+            <div class="col span-1-of-3 produkttext_links" data-aos="fade-left">
+                <h2><strong>12 Jahre gereift</strong></h2>
+                <p>In der Nase mit Gewürzen, Pralinen, 
+                    Orangen und Oloroso Sherry. 
+                    Hat einen cremigen Geschmack 
+                    mit Orangen und dunklen Kirschen, 
+                    dazu Trockenfrüchte, Ingwer, 
+                    dunkle Schokolade, Sherry und 
+                    Eichenaromen. Langer Abgang.
+                </p>
+            </div>
+           
+            <div class="col span-1-of-3">
+                <img src="Bilder/12-Jahre.png" class="großesProduktBild">
+            </div>
+           
+            <div class="col span-1-of-3 produkttext_rechts" data-aos="fade-right">
+                <li>In <a href="#" class="farbe_3">Eichenfässern</a> gelagert</li>
+                <li>Aus <a href="#" class="farbe_3">Speyside, Schottland</a></li>
+                <li>40% VOL. Alkohol</li>
+                <li>Keine Chemie, <a href="#" class="farbe_3">nachhaltige Zutaten</a></li>
+
+                <h4>99 Euro</h4>
+                <button class="button_3">Bestellen</button>
+            </div>
+        </div>
+        <img src="Bilder/abtrennung_gelb.png" class="abtrennung">
     </section>
 
 
@@ -211,11 +309,11 @@
     <script>
         AOS.init({
             once:true,
-            offset: 300,
+            offset: 250,
             duration: 600,
             delay: 500,
             disable: function () {
-                var maxWidth = 800;
+                var maxWidth = 768;
                 return window.innerWidth < maxWidth;
             }
         });

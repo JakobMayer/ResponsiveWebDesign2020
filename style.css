@@ -24,14 +24,20 @@ body {
     visibility: hidden;
 }
 
-.farbe_1 {
-    color: #D12918;
-    text-decoration: none;
-}
-
-.farbe_1:hover {
+.farbe_1,
+.farbe_2,
+.farbe_3:hover {
     text-decoration: underline;
 }
+
+.farbe_1 { color: #D12918;text-decoration: none;}
+.farbe_2 {color:#E79A22; text-decoration: none;}
+.farbe_3 {color:#DB661D; text-decoration: none;}
+
+
+
+
+
 
 /* ----------------------------------------------- */
 /* Reusable */
@@ -39,11 +45,6 @@ body {
 
 .row {
     max-width: 1140px;
-    margin: 0 auto;
-}
-
-.row_2 {
-    max-width: 1040px;
     margin: 0 auto;
 }
   
@@ -167,7 +168,6 @@ strong {
     padding-bottom: 200px;
     padding-top: 200px;
     background-attachment: fixed; 
-    
 }
 
 /* ----------------------------------------------- */
@@ -195,6 +195,19 @@ strong {
     color: white;
     transition: 0.3s;
 }
+
+.button_2 {
+    border: 2px solid #E79A22;
+}
+
+.button_2:hover {
+    background-color: #E79A22;
+    color: white;
+    transition: 0.3s;
+}
+
+.button_3:hover {background-color: #DB661D;color: white;transition: 0.3s;}
+.button_3 {border: 2px solid #DB661D}
 
 /* ----------------------------------------------- */
 /* Produkt */
@@ -242,7 +255,7 @@ strong {
     background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.356)), url("Bilder/Fässer.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     background-attachment: fixed; 
 }
 
@@ -303,16 +316,151 @@ ion-icon {
 }
 
 
-/* ------------------- Smartphone -------------------*/
 
-@media screen and (max-width: 600px){
 
-    h1 {
-        font-size: 200%;
-    font-weight: 600;
+
+/* ----------------------------------------------- */
+/* Queries */
+/* ----------------------------------------------- */
+
+
+/* 1025 - 1200px */
+@media only screen and (max-width: 1200px){
+    .row,
+    .hero-text-box { padding: 0 2%; }
+    .col { 
+        margin: 0 0 2% 0;
     }
 
-    .row {
-        width: 500px;
+    h1 {font-size:260%;}
+    h2 {font-size: 110%;}
+    h3 { font-size: 90%;}
+    h4 {font-weight: 700;font-size: 155%; margin-top: 3%;}
+
+    section {padding-left: 2%;padding-right: 2%;}
+
+    .logo { height: 37px;}
+    .main-nav img {height: 23px;}
+
+    .small-text {margin-left: 2%; }
+    .small-bottles {margin-left: 2%;}
+
+    .small-bottles img {
+        height: 270px;
+        margin-top: 50px;
     }
+
+    .produkttext_links {margin-top: 20%;}
+    .produkttext_rechts {margin-top: 24.5%; padding-left: 3%;}
+}
+
+
+
+
+/* 767 - 1024 */
+@media only screen and (max-width: 1024px) {
+    .row,
+    .hero-text-box { padding: 0 2%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    .row {width: 100%;}
+
+    body {font-size: 16px; }
+
+    h1 {font-size:200%;}
+    h2 {font-size: 110%;}
+    h3 {font-size: 90%;}
+    h4 {font-weight: 700;font-size: 155%; margin-top: 3%;}
+    
+
+    .logo { height: 33px;}
+    .main-nav img {height: 20px;}
+
+    .small-text {margin: 2% 2%;}
+    .small-bottles img {
+        height: 300px;
+        margin-right: 60px;
+        margin-top: 30px;
+    }
+
+    section {padding-left: 3%;}
+
+    .großesProduktBild {
+        height: 500px;
+        padding-left: 15%;
+    }
+
+    .button_1,
+    .button_2,
+    .button_3,
+    .button_4 {margin-top: 3%; font-size: 120%};
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 768px) {
+    .row,
+    .hero-text-box { padding: 0 2%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    body {font-size: 16px; }
+
+    h1 {font-size:180%;}
+    h2 {font-size: 110%;}
+    h3 {font-size: 100%; padding-left: 15px;}
+    h4 {font-weight: 700;font-size: 155%; margin-top: 3%;}
+
+    .logo { height: 25px;}
+    .main-nav img {height: 20px; padding-left: 0%;}
+
+    .small-text {margin: 2% 2%;}
+    .small-bottles img {
+        height: 400px;
+        margin-right: 60px;
+        margin-top: 30px;
+    }
+
+    .großesProduktBild {
+        height: 400px;
+        padding-right: 15%;
+    }
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    h1 {font-size:160%;}
+    h2 {font-size: 105%; margin-bottom: 10%;}
+    h3 {font-size: 100%; padding-left:11px;}
+    h4 {font-weight: 600;font-size: 155%; margin-top: 3%;}
+
+    section {padding-left: 4%; padding-right: 4%;}
+
+    .logo { height: 20px; }
+    .main-nav {margin-top: 0px;}
+    .main-nav img {height: 0px; }
+    .hero-text-box {margin-top: 30px;}
+
+    .small-text {margin: 2% 2%;}
+    .small-bottles img {
+        height: 370px;
+        margin-right: 60px;
+        margin-top: 30px;
+    }
+
+    .großesProduktBild {
+        height: 500px;
+        
+    }
+
+    .button_1,
+    .button_2,
+    .button_3,
+    .button_4 {margin-top: 3%; font-size: 100%};
+
 }
