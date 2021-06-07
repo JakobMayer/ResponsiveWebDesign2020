@@ -24,16 +24,16 @@ body {
     visibility: hidden;
 }
 
-.farbe_1:hover,
-.farbe_2:hover,
-.farbe_3:hover {
-    text-decoration: underline;
-}
 
 .farbe_1 { color: #D12918;text-decoration: none;}
 .farbe_2 {color:#E79A22; text-decoration: none;}
 .farbe_3 {color:#DB661D; text-decoration: none;}
 
+.farbe_1:hover,
+.farbe_2:hover,
+.farbe_3:hover {
+    text-decoration: underline;
+}
 
 
 
