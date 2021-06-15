@@ -431,14 +431,16 @@ ion-icon {
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+    body { display: flex; flex-flow: column; }
     h1 {font-size:160%;}
-    h2 {font-size: 105%; margin-bottom: 10%;}
+    h2 {font-size: 105%; margin-bottom: 7%;margin-top: 8%;}
     h3 {font-size: 100%; padding-left:11px;}
     h4 {font-weight: 600;font-size: 155%; margin-top: 3%;}
+    button {margin-bottom:8%;}
 
     section {padding-left: 4%; padding-right: 4%;}
 
-    .logo { height: 20px; margin-top: 6vh; margin-left: 2%;}
+    .logo { height: 20px; margin-top: 3vh; margin-left: 2%;}
     .main-nav {margin-top: 0px;}
     .main-nav img {height: 0px; }
     .hero-text-box {margin-top: 30px;}
@@ -451,10 +453,16 @@ ion-icon {
         margin-top: 30px;
     }
 
+    .two { order: 1;}
+    .one {order: 2;}
+    .three {order: 3;}
+
     .großesProduktBild {
         height: auto;
         width: 30vh;
         margin-left: 15%;
+        margin-top: 4%;
+        margin-bottom: 4%;
         
     }
 
