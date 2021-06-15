@@ -36,9 +36,6 @@ body {
 }
 
 
-
-
-
 /* ----------------------------------------------- */
 /* Reusable */
 /* ----------------------------------------------- */
@@ -441,20 +438,23 @@ ion-icon {
 
     section {padding-left: 4%; padding-right: 4%;}
 
-    .logo { height: 20px; }
+    .logo { height: 20px; margin-top: 6vh; margin-left: 2%;}
     .main-nav {margin-top: 0px;}
     .main-nav img {height: 0px; }
     .hero-text-box {margin-top: 30px;}
 
     .small-text {margin: 2% 2%;}
     .small-bottles img {
-        height: 370px;
+        height: 383px;
+        width: auto;
         margin-right: 60px;
         margin-top: 30px;
     }
 
     .großesProduktBild {
-        height: 500px;
+        height: auto;
+        width: 30vh;
+        margin-left: 18%;
         
     }
 
