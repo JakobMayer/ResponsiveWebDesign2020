@@ -356,11 +356,11 @@ ion-icon {
 
 /* 767 - 1024 */
 @media only screen and (max-width: 1024px) {
+    .span-1-of-2 {width: 100%;}
     .row,
     .hero-text-box { padding: 0 2%; }
     .col { 
-        width: 100%;
-        margin: 0 0 4% 0;
+        margin: 2% 0 4% 0;
     }
     .row {width: 100%;}
 
@@ -375,10 +375,10 @@ ion-icon {
     .logo { height: 33px;}
     .main-nav img {height: 20px;}
 
-    .small-text {margin: 2% 2%;}
+    .small-text {margin-top: 6%;}
     .small-bottles img {
         height: 300px;
-        margin-right: 60px;
+        margin-right: 20px;
         margin-top: 30px;
     }
 
@@ -386,8 +386,10 @@ ion-icon {
 
     .großesProduktBild {
         height: 500px;
-        padding-left: 15%;
     }
+
+    .produkttext_links {margin-top: 20%;}
+    .produkttext_rechts {margin-top: 24.5%; padding-left: 3%;}
 
     .button_1,
     .button_2,
@@ -395,13 +397,22 @@ ion-icon {
     .button_4 {margin-top: 3%; font-size: 120%};
 }
 
+@media only screen and (max-width: 953px) {
 
-/* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 768px) {
+    .small-bottles img {
+        height: 300px;
+        margin-right: 60px;
+        margin-top: 30px;
+    }
+
+}
+
+/* Small phones to small tablets: from 481px to 768px */
+@media only screen and (max-width: 767px) {
     .row,
     .hero-text-box { padding: 0 2%; }
     .col { 
-        width: 100%;
+        
         margin: 0 0 4% 0;
     }
 
@@ -412,12 +423,14 @@ ion-icon {
     h3 {font-size: 100%; padding-left: 15px;}
     h4 {font-weight: 700;font-size: 155%; margin-top: 3%;}
 
+    .col .small-bottles {width: 100%;}
+
     .logo { height: 25px;}
     .main-nav img {height: 20px; padding-left: 0%;}
 
-    .small-text {margin: 2% 2%;}
+    .small-text {margin-top: 8%;}
     .small-bottles img {
-        height: 400px;
+        height: 350px;
         margin-right: 60px;
         margin-top: 30px;
     }
@@ -426,11 +439,15 @@ ion-icon {
         height: 400px;
         padding-right: 15%;
     }
+
+    footer .row .col {width: 30%; margin-left: 15%;}
 }
 
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+
+    .col { width: 82%;}
     h1 {font-size:160%;}
     h2 {font-size: 105%; margin-bottom: 10%;}
     h3 {font-size: 100%; padding-left:11px;}
