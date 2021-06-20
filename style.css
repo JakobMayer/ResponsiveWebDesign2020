@@ -458,7 +458,7 @@ ion-icon {
 
     .col .span-1-of-2 {width: 100%;}
     .row {margin: 0;padding: 0;width: 100%;}
-    .hero-text-box {margin: 0;padding-inline-end: 0;}
+    .hero-text-box {margin: 0;padding: 0;width: 100%;}
 
     .col { width: 100%;}
     h1 {font-size:160%;}
@@ -498,7 +498,7 @@ ion-icon {
     .button_4 {margin: 3% 0; font-size: 90%;}
 
     ul {width: 30%; margin-left: 0;}
-    footer { width: 100%}
+    footer { width: 100%; margin: 0; padding: 0;}
     
 }
 
