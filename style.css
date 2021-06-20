@@ -356,7 +356,6 @@ ion-icon {
 
 /* 767 - 1024 */
 @media only screen and (max-width: 1024px) {
-    .span-1-of-2 {width: 100%;}
     .row,
     .hero-text-box { padding: 0 2%; }
     .col { 
@@ -372,7 +371,7 @@ ion-icon {
     h4 {font-weight: 700;font-size: 155%; margin-top: 3%;}
     
 
-    .logo { height: 33px;}
+    .logo { height: 35px; padding-top: 10px;}
     .main-nav img {height: 20px;}
 
     .small-text {margin-top: 6%;}
@@ -406,6 +405,15 @@ ion-icon {
     }
 
 }
+
+
+@media only screen and (max-width: 900px) {
+    .span-1-of-2 {width: 100%;}
+    footer .row .col {width: 40%; margin-left: 10%; }
+}
+
+
+
 
 /* Small phones to small tablets: from 481px to 768px */
 @media only screen and (max-width: 767px) {
@@ -449,20 +457,20 @@ ion-icon {
 
     .col { width: 82%;}
     h1 {font-size:160%;}
-    h2 {font-size: 105%; margin-bottom: 10%;}
-    h3 {font-size: 100%; padding-left:11px;}
+    h2 {font-size: 120%; margin-bottom: 10%; margin-top: 8%;}
+    h3 {font-size: 100%}
     h4 {font-weight: 600;font-size: 155%; margin-top: 3%;}
 
     section {padding-left: 4%; padding-right: 4%;}
 
-    .logo { height: 20px; margin-top: 6vh; margin-left: 2%;}
+    .logo { height: 30px; margin-top: 3vh; margin-left: 2%;}
     .main-nav {margin-top: 0px;}
     .main-nav img {height: 0px; }
     .hero-text-box {margin-top: 30px;}
 
     .small-text {margin: 2% 2%;}
     .small-bottles img {
-        height: 383px;
+        height: 250px;
         width: auto;
         margin-right: 60px;
         margin-top: 30px;
@@ -470,14 +478,18 @@ ion-icon {
 
     .großesProduktBild {
         height: auto;
-        width: 30vh;
-        margin-left: 18%;
+        width: 20vh;
+        margin-left: 35%;
+        margin-top: 3%;
+        margin-bottom: 3%;
         
     }
 
     .button_1,
     .button_2,
     .button_3,
-    .button_4 {margin-top: 3%; font-size: 100%};
+    .button_4 {margin: 3% 0; font-size: 90%;}
 
+    
+    footer .row .col {width: 100%; margin-left: 15%;}
 }
