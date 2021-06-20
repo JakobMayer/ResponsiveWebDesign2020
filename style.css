@@ -6,6 +6,7 @@
 
 body {
     background-image: url("Bilder/background.jpg");
+    
     color: black;
     font-family: serif;
     letter-spacing: 1px;
@@ -455,13 +456,17 @@ ion-icon {
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
 
-    .col { width: 82%;}
+    .col .span-1-of-2 {width: 100%;}
+    .row {margin: 0;padding: 0 2%;width: 100%;}
+    .hero-text-box {margin: 0;padding-inline-end: 0;}
+
+    .col { width: 100%;}
     h1 {font-size:160%;}
     h2 {font-size: 120%; margin-bottom: 10%; margin-top: 8%;}
     h3 {font-size: 100%}
     h4 {font-weight: 600;font-size: 155%; margin-top: 3%;}
 
-    section {padding-left: 4%; padding-right: 4%;}
+    section {padding-left: 4%; padding-right: 4%;width: 100%;}
 
     .logo { height: 30px; margin-top: 3vh; margin-left: 2%;}
     .main-nav {margin-top: 0px;}
@@ -475,6 +480,8 @@ ion-icon {
         margin-right: 60px;
         margin-top: 30px;
     }
+
+    .produkttext_links {}
 
     .großesProduktBild {
         height: auto;
@@ -490,6 +497,9 @@ ion-icon {
     .button_3,
     .button_4 {margin: 3% 0; font-size: 90%;}
 
+    ul {width: 30%; margin-left: 0;}
+    footer { width: 100%}
     
-    footer .row .col {width: 100%; margin-left: 15%;}
 }
+
+
