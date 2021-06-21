@@ -399,6 +399,7 @@ ion-icon {
 
 @media only screen and (max-width: 953px) {
 
+    .small-text {margin-top: 0%;}
     .small-bottles img {
         height: 300px;
         margin-right: 60px;
@@ -411,6 +412,11 @@ ion-icon {
 @media only screen and (max-width: 900px) {
     .span-1-of-2 {width: 100%;}
     footer .row .col {width: 40%; margin-left: 10%; }
+    .small-bottles img {
+        height: 330px;
+        margin-right: 80px;
+        margin-top: 30px;
+    }
 }
 
 
